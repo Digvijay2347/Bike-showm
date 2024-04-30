@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asdas</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+.details-container {
+  margin-top: 30px;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  color: #000;
+}
+
+.add-review {
+  margin-top: 30px;
+  color: #000;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.reviews {
+  margin-top: 30px;
+  display: flex; 
+  flex-wrap: nowrap; 
+  overflow: hidden;
+}
+
+.review {
+background-color: #fff;
+padding: 20px;
+border-radius: 8px;
+margin-right: 20px; 
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+width: 200px;
+display: inline-block; 
+animation: moveRight 10s linear infinite; 
+}
+
+@keyframes moveRight {
+0% {
+transform: translateX(300%); 
+}
+100% {
+transform: translateX(-100%); /* End position */
+}
+}
+
+.review strong {
+  font-weight: bold;
+}
+/* Alert */
+.alert {
+background-color: #f8d7da;
+color: #721c24;
+font-size: 1.2em;
+padding: 10px;
+border-radius: 4px;
+margin-bottom: 20px;
+display: none;
+animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="sidebar">
+          <button class="open-sidebar">&#9776;</button>
+          <div class="sidebar-content">
+            <a href=""><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-motorcycle"></i> New Bikes</a>
+            <a href="#"><i class="fas fa-bolt"></i> New Electric Bikes</a>
+            <a href="#"><i class="fas fa-box-open"></i> Inventory </a>
+            <a href="#"><i class="fas fa-star"></i> Reviews</a>
+            <a href="#" onclick="openLoginModal()" style="display: flex; align-items: center; margin: 10px;">Login
+              <ion-icon name="log-in-outline" style="font-size: 24px; margin-left: 125px; transition: transform 0.3s ease;"></ion-icon></a>
+          </div>
+        </div>
+      </nav>
+
+      <div id="reviewFormT" class="details-container">
+        <h2>Customer asaReviews</h2>
+        <div class="reviews" id="reviews">
+          <!-- Existing reviews will be dynamically added here -->
+        </div>
+        <div id="reviewFormT" class="add-review">
+          <h3>Add Your Review</h3>
+          <div class="alert" style="display: none;">
+            Review added successfully!
+          </div>
+          <form id="reviewFormT">
+            <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input type="text" id="reviewName" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="rating">Rating:</label>
+              <select id="rating1" name="rating" required>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="1">⭐</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="comment">Your Review:</label>
+              <textarea id="reviewcomment" name="comment" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit Review</button>
+          </form>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+      <script src="rrst.js"></script>
+</body>
+</html>

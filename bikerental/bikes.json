@@ -1,0 +1,80 @@
+[
+    {
+      "name": "BONEVILLE BOBBER",
+      "image": "BOBBER.webp",
+      "video": "bobbervid.mp4",
+      "description": "The Boneville Bobber is a classic retro-styled cruiser motorcycle with a powerful 1,200cc V-twin engine and comfortable riding position. It features a sleek, minimalist design with a low-slung seat, fat tires, and a hardtail-style rear suspension.",
+      "price": "$15,000",
+      "onRoadPriceLink": "https://example.com/boneville-bobber-on-road-price",
+      "engine": "1,200cc V-twin",
+      "transmission": "6-speed manual",
+      "fuelCapacity": "15 liters",
+      "seatHeight": "660 mm",
+      "colorOptions": ["Matte Black", "Candy Red", "Midnight Blue"]
+    },
+    {
+      "name": "Royal Enfield Hunter 350",
+      "image": "enfield.webp",
+      "video": "video.mp4",
+      "description": "The Royal Enfield Hunter 350 is a versatile adventure bike suitable for both city commutes and off-road adventures. It has a lightweight yet robust chassis, long-travel suspension, and a capable 350cc single-cylinder engine.",
+      "price": "$12,500",
+      "onRoadPriceLink": "https://example.com/royal-enfield-hunter-350-on-road-price",
+      "engine": "349cc single-cylinder",
+      "transmission": "5-speed manual",
+      "fuelCapacity": "12 liters",
+      "groundClearance": "200 mm",
+      "colorOptions": ["Dapper White", "Dapper Grey", "Dapper Red"]
+    },
+    {
+      "name": "Yamaha MT 15 V2",
+      "image": "yamahaMT.webp",
+      "video": "video.mp4",
+      "description": "The Yamaha MT 15 V2 is a stylish and sporty naked bike with excellent performance and handling. It features a liquid-cooled 155cc engine, lightweight chassis, and aggressive street-fighter styling.",
+      "price": "$9,000",
+      "onRoadPriceLink": "https://example.com/yamaha-mt-15-v2-on-road-price",
+      "engine": "155cc liquid-cooled",
+      "transmission": "6-speed manual",
+      "fuelCapacity": "10 liters",
+      "seatHeight": "810 mm",
+      "colorOptions": ["Metallic Black", "Racing Blue", "Matte Green"]
+    },
+    {
+      "name": "Continental GT 650",
+      "image": "continental.webp",
+      "video": "conti.mp4",
+      "description": "The Continental GT 650 is a high-performance touring motorcycle designed for long-distance rides and comfort. It boasts a 648cc parallel-twin engine, retro-inspired styling, and modern amenities like a windscreen and saddlebags.",
+      "price": "$18,000",
+      "onRoadPriceLink": "https://example.com/continental-gt-650-on-road-price",
+      "engine": "648cc parallel-twin",
+      "transmission": "6-speed manual",
+      "fuelCapacity": "15 liters",
+      "seatHeight": "790 mm",
+      "colorOptions": ["Ventura Blue", "Ice Queen White", "Fireball Yellow"]
+    },
+    {
+      "name": "BMW S 1000 RR",
+      "image": "bmw12.webp",
+      "video": "bmwvideo.mp4",
+      "description": "The BMW S 1000 RR is a top-of-the-line superbike with cutting-edge technology and unmatched performance. It features a 999cc inline-four engine, advanced electronics, and aerodynamic bodywork designed for track domination.",
+      "price": "$20,000",
+      "onRoadPriceLink": "https://example.com/bmw-s-1000-rr-on-road-price",
+      "engine": "999cc inline-four",
+      "transmission": "6-speed manual",
+      "fuelCapacity": "16.5 liters",
+      "seatHeight": "824 mm",
+      "colorOptions": ["Racing Red", "Lupine Blue Metallic", "Black Storm Metallic"]
+    },
+    {
+      "name": "Harley-Davidson Sportster S",
+      "image": "harrley.webp",
+      "video": "harliyw.mp4",
+      "description": "The Harley-Davidson Sportster S is a classic cruiser motorcycle with iconic styling and powerful performance. It features a liquid-cooled Revolution Max 1250 V-twin engine, lightweight chassis, and modern amenities like a TFT display and advanced rider aids.",
+      "price": "$25,000",
+      "onRoadPriceLink": "https://example.com/harley-davidson-sportster-s-on-road-price",
+      "engine": "1,250cc liquid-cooled V-twin",
+      "transmission": "6-speed manual",
+      "fuelCapacity": "11.8 liters",
+      "seatHeight": "755 mm",
+      "colorOptions": ["Vivid Black", "Billiard Red", "Scorched Orange"]
+    }
+  ]

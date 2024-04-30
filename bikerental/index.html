@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Ride 4 Safety</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8M+K7Ns1t9nkjPNEy4W9G7T1Pqj5QofRTEbtl3y5KUoqG9wR" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>
+      <span>B</span>
+      <span>i</span>
+      <span>k</span>
+      <span>e</span>
+      <span> </span>
+      <span>S</span>
+      <span>h</span>
+      <span>o</span>
+      <span>w</span>
+      <span>r</span>
+      <span>o</span>
+      <span>o</span>
+      <span>m</span>
+    </h1>
+  </header>
+  <nav>
+    <div class="sidebar">
+      <button class="open-sidebar">&#9776;</button>
+      <div class="sidebar-content">
+        <a href=""><i class="fas fa-home"></i> Home</a>
+        <a href="browse-bikes.html"><i class="fas fa-motorcycle"></i> New Bikes</a>
+        <a href="#"><i class="fas fa-bolt"></i> New Electric Bikes</a>
+        <a href="#"><i class="fas fa-box-open"></i> Inventory </a>
+        <a href="#"><i class="fas fa-star"></i> Reviews</a>
+        <a href="#" onclick="openLoginModal()" style="display: flex; align-items: center; margin: 10px;">Login
+          <ion-icon name="log-in-outline" style="font-size: 24px; margin-left: 125px; transition: transform 0.3s ease;"></ion-icon></a>
+      </div>
+    </div>
+  </nav>
+  <div id="inventory"></div>
+<!-- Add a form to add new items to the inventory -->
+<div id="inventoryPopup" class="popup">
+  <div class="popup-content">
+    <span class="popup-close" onclick="closeInventoryPopup()">&times;</span>
+    <h2>Inventory</h2>
+    <!-- Form to add new item -->
+    <form id="addItemForm">
+      <input type="text" id="itemName" placeholder="Item Name" required>
+      <input type="number" id="itemQuantity" placeholder="Quantity" required>
+      <button type="submit">Add Item</button>
+    </form>
+    <!-- Display inventory content here -->
+    <div id="inventory"></div>
+  </div>
+</div>
+
+   <!-- Login popup -->
+   <div id="loginModal" class="wrapper" style="display: none;">
+    <span class="icon-close">
+      <ion-icon name="close"></ion-icon>
+    </span>
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon style="color: aliceblue;"  name="mail"></ion-icon>
+          </span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon style="color: aliceblue;" name="lock-closed"></ion-icon>
+          </span>
+          <input id="passwordInput" type="password" required>
+          <label>Password</label>
+          <span class="toggle-password" onclick="togglePasswordVisibility()">
+            <ion-icon style="color: aliceblue; z-index: 6666; cursor: pointer;" name="eye" ></ion-icon>
+          </span>
+        </div>
+        <div class="remember-forgot">
+          <label style="color: white;">
+            <input  type="checkbox">Remember Me</label>
+          <a style="color: aliceblue;" href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="login-register">
+          <p style="color: aliceblue;">Don't Have an account?
+            <a href="#" class="register-link">Register</a>
+          </p>
+        </div>
+      </form>
+    </div>  
+   </div>
+   <!-- Register popup -->
+<div id="registerModal" class="wrapper" style="display: none;">
+  <span class="icon-close2">
+    <ion-icon name="close"></ion-icon>
+  </span>
+  <div class="form-box register">
+    <h2>Register</h2>
+    <form action="#">
+      <div class="input-box">
+        <span class="icon">
+          <ion-icon style="color: aliceblue;"  name="person-circle"></ion-icon>
+        </span>
+        <input type="text" required>
+        <label>Username</label>
+      </div>
+      <div class="input-box">
+        <span class="icon">
+          <ion-icon style="color: aliceblue;"  name="mail"></ion-icon>
+        </span>
+        <input type="email" required>
+        <label>Email</label>
+      </div>
+      <div class="input-box">
+        <span class="icon">
+          <ion-icon style="color: aliceblue;" name="lock-closed"></ion-icon>
+        </span>
+        <input type="password" required>
+        <label>Password</label>
+      </div>
+      <button type="submit" class="btn">Register</button>
+      <div class="login-register">
+        <p style="color: aliceblue;">Already have an account?
+          <a href="#" class="login-link">Login</a>
+        </p>
+      </div>
+    </form>
+  </div>  
+</div>
+  <main>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="maintheme.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <video class="d-block w-100" autoplay loop muted>
+            <source src="bmw4k.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="bike2.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="bike3.jpg" alt="Fourth slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="bike4.jpg" alt="Fifth slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    
+    <div class="div-with-animation">
+      <div class="glitch-container" data-text="Ride 4 Safety India">Ride 4 Safety India</div>
+      <div class="glow">Ride 4 Safety India</div>
+      <p class="subtitle">Book a test ride and find your nearest dealer.</p>
+      <div class="button-container">
+        <button onclick="bookTestRide()">Book a Test Ride</button>
+        <button onclick="locateDealer()">Dealer Locator</button>
+      </div>
+      <div class="scanlines"></div>
+    </div>
+    
+    <!-- bikes -->
+    <div class="featured-bikes">
+      <h2>Featured Bikes</h2>
+      <div class="featured-bikes-container">
+        <div class="bike">
+          <div class="bike-image-container">
+            <img src="BOBBER.webp" alt="Featured Bike 1">
+            <video loop preload="auto" muted>
+              <source src="bobbervid.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="bike-info">
+            <h3>BONEVILLE BOBBER</h3>
+            <p>Description of Bike Model 1.</p>
+            <button onclick="displayBikeDetails('BONEVILLE BOBBER')">View Details</button>
+          </div>
+        </div>
+        <div class="bike">
+          <div class="bike-image-container">
+            <img src="enfield.webp" alt="Featured Bike 2">
+            <video loop preload="auto" muted>
+              <source src="video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="bike-info">
+            <h3>Royal Enfield Hunter 350</h3>
+            <p>Description of Bike Model 2.</p>
+            <button onclick="displayBikeDetails('Royal Enfield Hunter 350')">View Details</button>
+          </div>
+        </div>
+        <div class="bike">
+          <div class="bike-image-container">
+            <img src="yamahaMT.webp" alt="Featured Bike 3">
+            <video loop preload="auto" muted>
+              <source src="video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="bike-info">
+            <h3>Yamaha MT 15 V2</h3>
+            <p>Description of Bike Model 3.</p>
+            <button onclick="displayBikeDetails('Yamaha MT 15 V2')">View Details</button>
+          </div>
+        </div>
+        <div class="bike">
+          <div class="bike-image-container">
+            <img src="continental.webp" alt="Featured Bike 4">
+            <video loop preload="auto" muted>
+              <source src="conti.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="bike-info">
+            <h3>Continental GT 650</h3>
+            <p>Description of Bike Model 4.</p>
+            <button onclick="displayBikeDetails('Continental GT 650')">View Details</button>
+          </div>
+        </div>
+        <div class="bike">
+          <div class="bike-image-container">
+            <img src="bmw12.webp" alt="Featured Bike 5">
+            <video loop preload="auto" muted>
+              <source src="bmwvideo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="bike-info">
+            <h3>BMW S 1000 RR</h3>
+           
+              
+            <p>Check on-road price</p>
+            <button onclick="displayBikeDetails('BMW S 1000 RR')">View Details</button>
+          </div>
+        </div>
+        <div class="bike">
+          <div class="bike-image-container">
+            <img src="harrley.webp" alt="Featured Bike 6">
+            <video loop preload="auto" muted>
+              <source src="harliyw.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="bike-info">
+            <h3>Harley-Davidson Sportster S</h3>
+            <p>Description of Bike Model 6.</p>
+            <button onclick="displayBikeDetails('Harley-Davidson Sportster S')">View Details</button>
+          </div>
+        </div>
+        <div class="bike">
+          <div class="bike-image-container">
+            <img src="harrley.webp" alt="Featured Bike 6">
+            <video loop preload="auto" muted>
+              <source src="harliyw.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="bike-info">
+            <h3>Harley-Davidson Sportster S</h3>
+            <p>Description of Bike Model 6.</p>
+            <button onclick="displayBikeDetails('Harley-Davidson Sportster S')">View Details</button>
+          </div>
+        </div>
+        <div class="bike">
+          <div class="bike-image-container">
+            <img src="harrley.webp" alt="Featured Bike 6">
+            <video loop preload="auto" muted>
+              <source src="harliyw.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="bike-info">
+            <h3>Harley-Davidson Sportster S</h3>
+            <p>Description of Bike Model 6.</p>
+            <button onclick="displayBikeDetails('Harley-Davidson Sportster S')">View Details</button>
+          </div>
+        </div>
+        <div class="bike">
+          <div class="bike-image-container">
+            <img src="harrley.webp" alt="Featured Bike 6">
+            <video loop preload="auto" muted>
+              <source src="harliyw.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="bike-info">
+            <h3>Harley-Davidson Sportster S</h3>
+            <p>Description of Bike Model 6.</p>
+            <button onclick="displayBikeDetails('Harley-Davidson Sportster S')">View Details</button>
+          </div>
+        </div>
+        <div class="bike">
+          <div class="bike-image-container">
+            <img src="harrley.webp" alt="Featured Bike 6">
+            <video loop preload="auto" muted>
+              <source src="harliyw.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="bike-info">
+            <h3>Harley-Davidson Sportster S</h3>
+            <p>Description of Bike Model 6.</p>
+            <button onclick="displayBikeDetails('Harley-Davidson Sportster S')">View Details</button>
+          </div>
+        </div>
+
+        <div class="bike">
+          <div class="bike-image-container">
+            <img src="harrley.webp" alt="Featured Bike 6">
+            <video loop preload="auto" muted>
+              <source src="harliyw.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="bike-info">
+            <h3>Harley-Davidson Sportster S</h3>
+            <p>Description of Bike Model 6.</p>
+            <button onclick="displayBikeDetails('Harley-Davidson Sportster S')">View Details</button>
+          </div>
+        </div>
+        <div class="bike">
+          <div class="bike-image-container">
+            <img src="harrley.webp" alt="Featured Bike 6">
+            <video loop preload="auto" muted>
+              <source src="harliyw.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="bike-info">
+            <h3>Harley-Davidson Sportster S</h3>
+            <p>Description of Bike Model 6.</p>
+            <button onclick="displayBikeDetails('Harley-Davidson Sportster S')">View Details</button>
+          </div>
+        </div>
+        <div class="bike">
+          <div class="bike-image-container">
+            <img src="harrley.webp" alt="Featured Bike 6">
+            <video loop preload="auto" muted>
+              <source src="harliyw.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="bike-info">
+            <h3>Harley-Davidson Sportster S</h3>
+            <p>Description of Bike Model 6.</p>
+            <button onclick="displayBikeDetails('Harley-Davidson Sportster S')">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="pagination" id="pagination">
+        <!-- Pagination buttons will be dynamically inserted here -->
+      </div>
+    </div>
+  </main>
+  <!-- Bike Details Modal -->
+<div id="bikeDetailsModal" class="modal">
+  <div class="modal-content">
+    <span class="icon-close3">
+      <ion-icon name="close"></ion-icon>
+    </span>
+    <h2 id="bikeName"></h2>
+    <div id="bikeDetails">
+      <!-- Bike details will be displayed here -->
+    </div>
+  </div>
+</div>
+<!-- Cookie Message -->
+  <div id="cookie-message" class="cookie-message" style="display: none;">
+    <div class="container">
+      <p>This website uses cookies to enhance your browsing experience. By continuing to use this site, you agree to our use of cookies.</p>
+      <button style="width: 70px;" onclick="hideCookieMessage()" class="btn">Got it</button>
+    </div>
+  </div>
+  <!-- New Split Section -->
+  <section class="split-section">
+    <div class="video-container">
+      <!-- Replace "your-video.mp4" with the actual path to your video file -->
+      <video  autoplay muted loop style="border-radius: 10px; box-shadow: 0 0 20px 10px rgba(255, 215, 0, 0.5);"    >
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <!-- reviews page -->
+    <div id="reviewFormT" class="details-container">
+      <h2>Customer Reviews</h2>
+      <div class="reviews" id="reviews">
+        <!-- Existing reviews will be dynamically added here -->
+      </div>
+      <div id="reviewFormT" class="add-review">
+        <h3>Add Your Review</h3>
+        <div class="alert" style="display: none;">
+          Review added successfully!
+        </div>
+        <form id="reviewFormT">
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="reviewName" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="rating">Rating:</label>
+            <select id="rating1" name="rating" required>
+              <option value="5">⭐⭐⭐⭐⭐</option>
+              <option value="4">⭐⭐⭐⭐</option>
+              <option value="3">⭐⭐⭐</option>
+              <option value="2">⭐⭐</option>
+              <option value="1">⭐</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="comment">Your Review:</label>
+            <textarea id="reviewcomment" name="comment" required></textarea>
+          </div>
+          <button type="submit" class="btn">Submit Review</button>
+        </form>
+      </div>
+    </div>
+  
+  </section>
+  <!-- End of Split Section -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="reviewfirbase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+     // Function to open login modal
+     function openLoginModal() {
+      var modal = document.getElementById('loginModal');
+      modal.style.display = 'block';
+    }
+    // Close the login modal when the close button is clicked
+    document.querySelector('.icon-close').addEventListener('click', function() {
+      var modal = document.getElementById('loginModal');
+      modal.style.display = 'none';
+    });
+    // Close the login modal when the user clicks outside of it
+    window.addEventListener('click', function(event) {
+      var modal = document.getElementById('loginModal');
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    });
+      // Function to toggle password visibility
+// Function to toggle password visibility
+function togglePasswordVisibility() {
+  var passwordInput = document.getElementById('passwordInput');
+  var togglePasswordBtn = document.querySelector('.toggle-password ion-icon');
+
+  // Toggle the type attribute of the password input
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    togglePasswordBtn.setAttribute('name', 'eye-off-outline'); // Change icon to hide
+  } else {
+    passwordInput.type = "password";
+    togglePasswordBtn.setAttribute('name', 'eye-outline'); // Change icon to show
+  }
+}
+
+    // Function to open register modal
+function openRegisterModal() {
+  var modal = document.getElementById('registerModal');
+  modal.style.display = 'block';
+}
+
+// Close the register modal when the close button is clicked
+document.querySelector('.icon-close2').addEventListener('click', function() {
+  var modal = document.getElementById('registerModal');
+  modal.style.display = 'none';
+});
+
+// Close the register modal when the user clicks outside of it
+window.addEventListener('click', function(event) {
+  var modal = document.getElementById('registerModal');
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+});
+// Function to open register modal when clicked on register link in login box
+document.querySelector('.register-link').addEventListener('click', function() {
+  openRegisterModal();
+});
+// Function to open login modal when clicked on login link in register box
+document.querySelector('.login-link').addEventListener('click', function() {
+  var registerModal = document.getElementById('registerModal');
+  registerModal.style.display = 'none';
+  openLoginModal();
+});
+    // Close the sidebar when clicking outside of it
+document.addEventListener("click", function(event) {
+  var sidebar = document.querySelector('.sidebar');
+  var openSidebarBtn = document.querySelector('.open-sidebar');
+  if (event.target !== sidebar && event.target !== openSidebarBtn && !sidebar.contains(event.target)) {
+    sidebar.classList.remove('active');
+  }
+});
+    function bookTestRide() {
+      // Replace this with actual functionality
+      alert("Book a Test Ride functionality coming soon!");
+    }
+
+    function locateDealer() {
+      // Replace this with actual functionality
+      alert("Dealer Locator functionality coming soon!");
+    }
+
+    // Check if the cookie message has been closed before
+    function isCookieMessageClosed() {
+      return localStorage.getItem('cookieMessageClosed') === 'false';
+    }
+
+    // Show the cookie message after 5-6 seconds if it hasn't been closed before
+    if (!isCookieMessageClosed()) {
+      setTimeout(() => {
+        document.getElementById('cookie-message').style.display = 'flex';
+      }, 5000);
+    }
+
+    // Function to hide the cookie message and set the cookie
+    function hideCookieMessage() {
+      document.getElementById('cookie-message').style.display = 'none';
+      localStorage.setItem('cookieMessageClosed', 'true');
+    }
+// bike image zoom effect for video
+function handleVideoHover() {
+  const bikeContainers = document.querySelectorAll('.bike-image-container');
+
+  bikeContainers.forEach(container => {
+    const image = container.querySelector('img');
+    const video = container.querySelector('video');
+
+    container.addEventListener('mouseenter', () => {
+      image.style.transform = 'scale(1.1)'; 
+      video.play();
+    });
+
+    container.addEventListener('mouseleave', () => {
+      image.style.transform = 'scale(1)';
+      video.pause();
+      video.currentTime = 0;
+    });
+  });
+}
+
+// Call the function to initialize the video hover effect
+handleVideoHover(); 
+
+document.addEventListener("DOMContentLoaded", function() {
+  const openSidebarBtn = document.querySelector('.open-sidebar');
+  const sidebar = document.querySelector('.sidebar');
+
+  openSidebarBtn.addEventListener('click', function() {
+    sidebar.classList.toggle('active');
+  });
+});
+
+
+</script>
+<script src="script.js"></script>
+</body>
+</html>

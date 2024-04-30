@@ -1,0 +1,14 @@
+[
+    { "brand": "Honda", "model": "CBR600RR", "year": 2023, "image": "https://via.placeholder.com/250x150", "price": "$12,500" },
+    { "brand": "Honda", "model": "CBR1000RR", "year": 2024, "image": "https://via.placeholder.com/250x150", "price": "$15,000" },
+    { "brand": "Honda", "model": "CBR650R", "year": 2022, "image": "https://via.placeholder.com/250x150", "price": "$9,500" },
+    // Add more Honda bikes here
+    { "brand": "Yamaha", "model": "YZF-R1", "year": 2022, "image": "https://via.placeholder.com/250x150", "price": "$14,200" },
+    { "brand": "Suzuki", "model": "GSX-R1000", "year": 2024, "image": "https://via.placeholder.com/250x150", "price": "$13,800" },
+    { "brand": "Kawasaki", "model": "Ninja ZX-10R", "year": 2023, "image": "https://via.placeholder.com/250x150", "price": "$15,000" },
+    { "brand": "Ducati", "model": "Panigale V4", "year": 2024, "image": "https://via.placeholder.com/250x150", "price": "$18,000" },
+    { "brand": "BMW", "model": "S1000RR", "year": 2022, "image": "https://via.placeholder.com/250x150", "price": "$16,500" },
+    { "brand": "Aprilia", "model": "RSV4", "year": 2023, "image": "https://via.placeholder.com/250x150", "price": "$17,700" },
+    { "brand": "Triumph", "model": "Daytona 765", "year": 2022, "image": "https://via.placeholder.com/250x150", "price": "$14,000" }
+  ]
+  

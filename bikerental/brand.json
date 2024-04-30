@@ -1,0 +1,418 @@
+{
+  "bmw": [
+    {
+      "name": "BMW S1000RR",
+      "description": "Experience adrenaline-pumping performance with the BMW S1000RR. This superbike boasts cutting-edge technology, including dynamic traction control and a high-performance engine, delivering unparalleled speed and agility on the track.",
+      "imageUrl": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/135917/s1000rr-2023-left-side-view.jpeg?isig=0&q=80&wm=3"
+    },
+    {
+      "name": "BMW R1250GS",
+      "description": "Conquer any terrain with the BMW R1250GS. As the flagship adventure touring motorcycle, it combines powerful performance with advanced electronics and comfortable ergonomics, making it perfect for long-distance exploration.",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/1/versions/bmw-r-1250-gs-standard1677218800297.jpg?q=80"
+    },
+    {
+      "name": "BMW F900R",
+      "description": "Experience dynamic road performance with the BMW F900R. With its sporty design and powerful engine, this naked sport bike offers thrilling rides and agile handling on urban streets and winding roads alike.",
+      "imageUrl": "https://static.motorradundreisen.de/motorrad/1683/image_857_857.webp"
+    },
+    {
+      "name": "BMW G310GS",
+      "description": "Conquer the city streets or venture off-road with the BMW G310GS. As a versatile adventure motorcycle, it combines compact size with rugged durability, making it perfect for urban commuting and light off-road adventures.",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/126519/g-310-gs-right-front-three-quarter.png?isig=0&q=80"
+    },
+    {
+      "name": "BMW K1600GTL",
+      "description": "Embark on luxurious touring adventures with the BMW K1600GTL. Known for its smooth power delivery and premium comfort features, this touring motorcycle offers a first-class riding experience for long-distance journeys.",
+      "imageUrl": "https://media.zigcdn.com/media/model/2018/Oct/front-right-view-1913896478_930x620.jpg"
+    },
+    {
+      "name": "BMW RnineT",
+      "description": "Embrace classic style and modern performance with the BMW RnineT. Featuring retro-inspired design and a powerful boxer engine, this motorcycle offers timeless appeal and exhilarating rides on both city streets and country roads.",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/1/versions/bmw-r-ninet-standard1677220239251.jpg?q=80"
+    },
+    {
+      "name": "BMW G310R",
+      "description": "Experience urban mobility at its finest with the BMW G310R. With its agile handling and compact size, this naked bike offers a perfect blend of performance and practicality for navigating city streets with ease.",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/bw/models/bmw-g310r.jpg?20190103151915&q=80"
+    },
+    {
+      "name": "BMW F850GS",
+      "description": "Conquer new horizons with the BMW F850GS. As a versatile adventure motorcycle, it offers powerful performance, advanced electronics, and comfortable ergonomics, making it perfect for exploring both on and off-road.",
+      "imageUrl": "https://www.zabikers.co.za/wp-content/uploads/2021/09/G-310-GS-1-800x600.jpg"
+    },
+    {
+      "name": "BMW R1250RT",
+      "description": "Embark on luxurious touring journeys with the BMW R1250RT. Featuring a powerful engine, advanced electronics, and comfortable ergonomics, this touring motorcycle offers unmatched comfort and convenience for long-distance travel.",
+      "imageUrl": "https://i0.wp.com/www.asphaltandrubber.com/wp-content/uploads/2018/09/2019-BMW-R1250RT-red-scaled.jpg?fit=2560%2C1708&ssl=1"
+    },
+    {
+      "name": "BMW C400X",
+      "description": "Experience urban mobility redefined with the BMW C400X. With its agile handling, spacious storage, and advanced features, this maxi-scooter offers comfort and convenience for navigating city streets with ease.",
+      "imageUrl": "https://www.bennetts.co.uk/-/media/bikesocial/2018-june-images/2018-bmw-c400x-road-test-review/02_bmw-c400x-scooter-review.ashx?h=493&la=en&w=740&hash=2DE4274D9C02FD37F489D01B8E778CFF62ED2408"
+    }
+  ],
+  "royal_enfield": [
+    {
+      "name": "Royal Enfield Classic 350",
+      "description": "Embrace the nostalgia of motorcycling with the Royal Enfield Classic 350. Featuring timeless styling and a torquey engine, this iconic motorcycle offers a smooth and leisurely ride, perfect for cruising the open road.",
+      "imageUrl": "images/royal-enfield-classic-350.jpg"
+    },
+    {
+      "name": "Royal Enfield Himalayan",
+      "description": "Embark on epic adventures with the Royal Enfield Himalayan. Built for rugged terrain, it combines versatility with durability, offering riders the freedom to explore remote landscapes with confidence.",
+      "imageUrl": "images/royal-enfield-himalayan.jpg"
+    },
+    {
+      "name": "Royal Enfield Interceptor 650",
+      "description": "Experience classic charm and modern performance with the Royal Enfield Interceptor 650. Featuring a powerful parallel-twin engine and retro-inspired design, this motorcycle offers timeless appeal and enjoyable rides on both city streets and country roads.",
+      "imageUrl": "images/royal-enfield-interceptor-650.jpg"
+    },
+    {
+      "name": "Royal Enfield Meteor 350",
+      "description": "Ride the stars with the Royal Enfield Meteor 350. With its refined engine and comfortable ergonomics, this cruiser motorcycle offers smooth and relaxing rides, perfect for laid-back cruising on highways and country roads.",
+      "imageUrl": "images/royal-enfield-meteor-350.jpg"
+    },
+    {
+      "name": "Royal Enfield Bullet 350",
+      "description": "Experience legendary performance with the Royal Enfield Bullet 350. As an icon of motorcycling history, it offers timeless styling, dependable performance, and a sense of adventure on every ride.",
+      "imageUrl": "images/royal-enfield-bullet-350.jpg"
+    },
+    {
+      "name": "Royal Enfield Continental GT 650",
+      "description": "Channel the spirit of café racing with the Royal Enfield Continental GT 650. With its sporty design and powerful engine, this motorcycle offers thrilling rides and classic styling reminiscent of the golden era of motorcycling.",
+      "imageUrl": "images/royal-enfield-continental-gt-650.jpg"
+    },
+    {
+      "name": "Royal Enfield Classic 500",
+      "description": "Ride into the sunset with the Royal Enfield Classic 500. Featuring vintage styling and a thumping engine, this motorcycle offers a nostalgic experience and a sense of freedom on the open road.",
+      "imageUrl": "images/royal-enfield-classic-500.jpg"
+    },
+    {
+      "name": "Royal Enfield Bullet Trials 350",
+      "description": "Experience off-road adventures with the Royal Enfield Bullet Trials 350. Inspired by the brand's rich heritage in trials racing, this motorcycle offers rugged durability and timeless styling for conquering challenging terrain.",
+      "imageUrl": "images/royal-enfield-bullet-trials-350.jpg"
+    },
+    {
+      "name": "Royal Enfield Thunderbird 350",
+      "description": "Embrace the open road with the Royal Enfield Thunderbird 350. With its cruiser styling and comfortable ergonomics, this motorcycle offers relaxed rides and effortless touring on highways and country roads.",
+      "imageUrl": "images/royal-enfield-thunderbird-350.jpg"
+    },
+    {
+      "name": "Royal Enfield Classic Signals 350",
+      "description": "Ride with pride with the Royal Enfield Classic Signals 350. Inspired by the brand's association with the armed forces, this motorcycle features distinctive styling and a powerful engine, making it a symbol of strength and freedom.",
+      "imageUrl": "images/royal-enfield-classic-signals-350.jpg"
+    }
+  ],
+  "honda": [
+    {
+      "name": "Honda CBR1000RR-R Fireblade SP",
+      "description": "Unleash the power of precision with the Honda CBR1000RR-R Fireblade SP. Engineered for track dominance, it features advanced aerodynamics, electronic aids, and a high-revving engine, delivering exhilarating performance on the circuit.",
+      "imageUrl": "images/honda-cbr1000rr-r-fireblade-sp.jpg"
+    },
+    {
+      "name": "Honda Africa Twin",
+      "description": "Embark on limitless adventures with the Honda Africa Twin. Built to conquer any terrain, it offers rugged durability, advanced electronics, and a powerful engine, making it the ultimate adventure touring motorcycle.",
+      "imageUrl": "images/honda-africa-twin.jpg"
+    },
+    {
+      "name": "Honda CB650R",
+      "description": "Experience naked sport performance with the Honda CB650R. With its aggressive styling and powerful engine, this motorcycle offers thrilling rides and agile handling on city streets and winding roads alike.",
+      "imageUrl": "images/honda-cb650r.jpg"
+    },
+    {
+      "name": "Honda Gold Wing",
+      "description": "Embark on luxurious touring journeys with the Honda Gold Wing. As the ultimate touring motorcycle, it offers unmatched comfort, convenience, and performance, making it perfect for exploring the open road in style.",
+      "imageUrl": "images/honda-gold-wing.jpg"
+    },
+    {
+      "name": "Honda Rebel 500",
+      "description": "Ride with attitude on the Honda Rebel 500. With its custom-inspired design and torquey engine, this cruiser motorcycle offers laid-back rides and urban adventures with style and personality.",
+      "imageUrl": "images/honda-rebel-500.jpg"
+    },
+    {
+      "name": "Honda CBR650R",
+      "description": "Experience sportbike thrills with the Honda CBR650R. With its aggressive styling and high-revving engine, this motorcycle offers adrenaline-pumping rides and precise handling on both city streets and winding roads.",
+      "imageUrl": "images/honda-cbr650r.jpg"
+    },
+    {
+      "name": "Honda CB500X",
+      "description": "Conquer new horizons with the Honda CB500X. As a versatile adventure motorcycle, it offers agile handling, comfortable ergonomics, and advanced features for exploring both urban streets and unpaved trails.",
+      "imageUrl": "images/honda-cb500x.jpg"
+    },
+    {
+      "name": "Honda CB1000R",
+      "description": "Experience naked sport performance with the Honda CB1000R. With its aggressive styling and powerful engine, this motorcycle offers thrilling rides and agile handling on both city streets and winding roads.",
+      "imageUrl": "images/honda-cb1000r.jpg"
+    },
+    {
+      "name": "Honda CB500F",
+      "description": "Redefine urban riding with the Honda CB500F. With its naked sport design and responsive engine, this motorcycle offers dynamic performance and agile handling for navigating city streets with ease and confidence.",
+      "imageUrl": "images/honda-cb500f.jpg"
+    },
+    {
+      "name": "Honda CRF1100L Africa Twin Adventure Sports",
+      "description": "Embark on epic adventures with the Honda CRF1100L Africa Twin Adventure Sports. With its rugged design, advanced electronics, and powerful engine, this adventure touring motorcycle offers unrivaled capability for exploring remote landscapes.",
+      "imageUrl": "images/honda-crf1100l-africa-twin-adventure-sports.jpg"
+    }
+  ],
+  "bajaj": [
+    {
+      "name": "Bajaj Pulsar 220F",
+      "description": "Experience thrilling performance with the Bajaj Pulsar 220F. With its sporty design and powerful engine, this motorcycle delivers exhilarating rides on both city streets and highways.",
+      "imageUrl": "images/bajaj-pulsar-220f.jpg"
+    },
+    {
+      "name": "Bajaj Dominar 400",
+      "description": "Dominate the roads with the Bajaj Dominar 400. With its muscular styling and powerful engine, this motorcycle offers a perfect blend of performance, comfort, and versatility, making it ideal for long-distance touring.",
+      "imageUrl": "images/bajaj-dominar-400.jpg"
+    },
+    {
+      "name": "Bajaj Pulsar NS200",
+      "description": "Experience dynamic performance with the Bajaj Pulsar NS200. With its aggressive styling and responsive engine, this streetfighter motorcycle offers thrilling rides and agile handling on urban streets and winding roads.",
+      "imageUrl": "images/bajaj-pulsar-ns200.jpg"
+    },
+    {
+      "name": "Bajaj Platina 100",
+      "description": "Redefine everyday commuting with the Bajaj Platina 100. Known for its reliability and fuel efficiency, this commuter motorcycle offers hassle-free rides with its low maintenance and comfortable ergonomics.",
+      "imageUrl": "images/bajaj-platina-100.jpg"
+    },
+    {
+      "name": "Bajaj Avenger Cruise 220",
+      "description": "Cruise in style with the Bajaj Avenger Cruise 220. With its classic cruiser styling and comfortable ergonomics, this motorcycle offers relaxed rides and laid-back touring experiences on highways and country roads.",
+      "imageUrl": "images/bajaj-avenger-cruise-220.jpg"
+    },
+    {
+      "name": "Bajaj CT100",
+      "description": "Experience reliable performance with the Bajaj CT100. As a fuel-efficient commuter motorcycle, it offers dependable rides and low operating costs, making it perfect for everyday commuting in urban environments.",
+      "imageUrl": "images/bajaj-ct100.jpg"
+    },
+    {
+      "name": "Bajaj Avenger Street 160",
+      "description": "Ride with attitude on the Bajaj Avenger Street 160. With its bold styling and refined engine, this cruiser motorcycle offers urban adventures with style and personality, making every ride a statement.",
+      "imageUrl": "images/bajaj-avenger-street-160.jpg"
+    },
+    {
+      "name": "Bajaj Pulsar 150",
+      "description": "Experience the thrill of riding with the Bajaj Pulsar 150. With its sporty design and reliable performance, this motorcycle offers dynamic rides and agile handling on city streets and highways alike.",
+      "imageUrl": "images/bajaj-pulsar-150.jpg"
+    },
+    {
+      "name": "Bajaj Discover 125",
+      "description": "Discover new adventures with the Bajaj Discover 125. As a versatile commuter motorcycle, it offers comfortable rides and efficient performance, making it perfect for daily commuting and weekend getaways.",
+      "imageUrl": "images/bajaj-discover-125.jpg"
+    },
+    {
+      "name": "Bajaj Platina 110 H-Gear",
+      "description": "Experience hassle-free commuting with the Bajaj Platina 110 H-Gear. With its advanced features and fuel-efficient engine, this commuter motorcycle offers comfortable rides and low operating costs for urban commuters.",
+      "imageUrl": "images/bajaj-platina-110-h-gear.jpg"
+    }
+  ],
+  "hero": [
+    {
+      "name": "Hero Xtreme 200R",
+      "description": "Experience the thrill of riding with the Hero Xtreme 200R. With its sporty design and refined engine, this motorcycle offers a perfect balance of performance, comfort, and fuel efficiency for urban commuting.",
+      "imageUrl": "images/hero-xtreme-200r.jpg"
+    },
+    {
+      "name": "Hero Splendor Plus",
+      "description": "Redefine everyday commuting with the Hero Splendor Plus. Known for its reliability and fuel efficiency, this iconic motorcycle offers hassle-free rides with its low maintenance and comfortable ergonomics.",
+      "imageUrl": "images/hero-splendor-plus.jpg"
+    },
+    {
+      "name": "Hero Passion Pro",
+      "description": "Experience style and efficiency with the Hero Passion Pro. With its contemporary design and fuel-efficient engine, this commuter motorcycle offers comfortable rides and hassle-free ownership for urban commuters.",
+      "imageUrl": "images/hero-passion-pro.jpg"
+    },
+    {
+      "name": "Hero Glamour",
+      "description": "Ride with confidence on the Hero Glamour. With its sleek design and refined engine, this commuter motorcycle offers stylish rides and efficient performance for daily commuting and city cruising.",
+      "imageUrl": "images/hero-glamour.jpg"
+    },
+    {
+      "name": "Hero HF Deluxe",
+      "description": "Experience reliable performance with the Hero HF Deluxe. As a fuel-efficient commuter motorcycle, it offers dependable rides and low operating costs, making it perfect for everyday commuting in urban environments.",
+      "imageUrl": "images/hero-hf-deluxe.jpg"
+    },
+    {
+      "name": "Hero Super Splendor",
+      "description": "Experience superior performance with the Hero Super Splendor. With its powerful engine and comfortable ergonomics, this commuter motorcycle offers dynamic rides and hassle-free ownership for urban commuters.",
+      "imageUrl": "images/hero-super-splendor.jpg"
+    },
+    {
+      "name": "Hero Maestro Edge 125",
+      "description": "Discover the joy of riding with the Hero Maestro Edge 125. With its stylish design and efficient engine, this scooter offers comfortable rides and convenient features for urban commuting and daily errands.",
+      "imageUrl": "images/hero-maestro-edge-125.jpg"
+    },
+    {
+      "name": "Hero Xpulse 200",
+      "description": "Embark on thrilling adventures with the Hero Xpulse 200. As a versatile adventure motorcycle, it offers rugged durability, agile handling, and advanced features for exploring both on and off-road terrain.",
+      "imageUrl": "images/hero-xpulse-200.jpg"
+    },
+    {
+      "name": "Hero Destini 125",
+      "description": "Experience comfort and convenience with the Hero Destini 125. With its practical design and efficient engine, this scooter offers comfortable rides and convenient features for daily commuting and city cruising.",
+      "imageUrl": "images/hero-destini-125.jpg"
+    },
+    {
+      "name": "Hero Pleasure Plus",
+      "description": "Discover the pleasure of riding with the Hero Pleasure Plus. With its compact size and easy handling, this scooter offers nimble rides and convenient features for urban commuting and daily errands.",
+      "imageUrl": "images/hero-pleasure-plus.jpg"
+    }
+  ],
+  "yamaha": [
+    {
+      "name": "Yamaha YZF-R6",
+      "description": "Experience track-ready performance with the Yamaha YZF-R6. With its aggressive styling and high-revving engine, this supersport motorcycle delivers thrilling rides and razor-sharp handling on the circuit.",
+      "imageUrl": "images/yamaha-yzf-r6.jpg"
+    },
+    {
+      "name": "Yamaha FZ-09",
+      "description": "Unleash the dark side of Japan with the Yamaha FZ-09. With its muscular styling and torquey engine, this naked sport bike offers exhilarating rides and agile handling on both urban streets and winding roads.",
+      "imageUrl": "images/yamaha-fz-09.jpg"
+    },
+    {
+      "name": "Yamaha Tracer 900",
+      "description": "Embark on endless adventures with the Yamaha Tracer 900. Offering sport touring comfort and versatility, this motorcycle features a powerful engine, adjustable suspension, and advanced electronics for conquering long-distance journeys with ease.",
+      "imageUrl": "images/yamaha-tracer-900.jpg"
+    },
+    {
+      "name": "Yamaha MT-07",
+      "description": "Experience the thrill of naked sport riding with the Yamaha MT-07. With its compact design and lively engine, this motorcycle offers dynamic rides and agile handling for urban commuting and weekend adventures.",
+      "imageUrl": "images/yamaha-mt-07.jpg"
+    },
+    {
+      "name": "Yamaha YZF-R1",
+      "description": "Experience the pinnacle of Yamaha's sportbike engineering with the YZF-R1. Featuring MotoGP-inspired technology and race-winning performance, this superbike offers unmatched agility, power, and precision for the ultimate riding experience.",
+      "imageUrl": "images/yamaha-yzf-r1.jpg"
+    },
+    {
+      "name": "Yamaha MT-09",
+      "description": "Unleash the dark side of Japan with the Yamaha MT-09. With its aggressive styling, torque-rich engine, and nimble handling, this naked sport bike delivers an exhilarating ride on both urban streets and winding roads.",
+      "imageUrl": "images/yamaha-mt-09.jpg"
+    },
+    {
+      "name": "Yamaha XSR900",
+      "description": "Ride with style and performance with the Yamaha XSR900. Inspired by the iconic café racer era, this motorcycle offers retro-modern design, powerful engine performance, and agile handling for thrilling rides on city streets and country roads.",
+      "imageUrl": "images/yamaha-xsr900.jpg"
+    },
+    {
+      "name": "Yamaha Tenere 700",
+      "description": "Conquer any terrain with the Yamaha Tenere 700. As a rugged adventure motorcycle, it offers versatility, durability, and agility for exploring remote landscapes and embarking on epic off-road adventures.",
+      "imageUrl": "images/yamaha-tenere-700.jpg"
+    },
+    {
+      "name": "Yamaha XSR700",
+      "description": "Experience timeless design and modern performance with the Yamaha XSR700. With its retro-inspired styling and agile handling, this motorcycle offers a perfect blend of nostalgia and exhilaration on city streets and country roads.",
+      "imageUrl": "images/yamaha-xsr700.jpg"
+    },
+    {
+      "name": "Yamaha MT-03",
+      "description": "Discover the thrill of naked sport riding with the Yamaha MT-03. With its compact size and agile handling, this motorcycle offers dynamic rides and effortless maneuverability for urban commuting and weekend adventures.",
+      "imageUrl": "images/yamaha-mt-03.jpg"
+    }
+  ],
+  "kawasaki": [
+    {
+      "name": "Kawasaki Ninja ZX-10R",
+      "description": "Experience track dominance with the Kawasaki Ninja ZX-10R. With its race-winning pedigree and powerful engine, this superbike offers blistering acceleration and precise handling, making it a formidable contender on the circuit.",
+      "imageUrl": "images/kawasaki-ninja-zx-10r.jpg"
+    },
+    {
+      "name": "Kawasaki Versys 650",
+      "description": "Embark on thrilling adventures with the Kawasaki Versys 650. With its versatile performance, comfortable ergonomics, and advanced features, this adventure touring motorcycle offers excitement and comfort on both paved roads and unpaved trails.",
+      "imageUrl": "images/kawasaki-versys-650.jpg"
+    },
+    {
+      "name": "Kawasaki Z900",
+      "description": "Experience naked sport performance with the Kawasaki Z900. With its aggressive styling and powerful engine, this motorcycle offers thrilling rides and precise handling on both city streets and winding roads.",
+      "imageUrl": "images/kawasaki-z900.jpg"
+    },
+    {
+      "name": "Kawasaki Z650",
+      "description": "Redefine urban riding with the Kawasaki Z650. With its naked sport design and responsive engine, this motorcycle offers dynamic performance and agile handling for navigating city streets with ease and confidence.",
+      "imageUrl": "images/kawasaki-z650.jpg"
+    },
+    {
+      "name": "Kawasaki Ninja 650",
+      "description": "Experience sportbike thrills with the Kawasaki Ninja 650. With its aggressive styling and versatile performance, this motorcycle offers exhilarating rides and precise handling on both city streets and winding roads.",
+      "imageUrl": "images/kawasaki-ninja-650.jpg"
+    },
+    {
+      "name": "Kawasaki Z1000",
+      "description": "Unleash the beast within with the Kawasaki Z1000. With its muscular styling and powerful engine, this naked sport bike offers exhilarating rides and aggressive performance on both urban streets and winding roads.",
+      "imageUrl": "images/kawasaki-z1000.jpg"
+    },
+    {
+      "name": "Kawasaki Ninja 400",
+      "description": "Experience the thrill of sport riding with the Kawasaki Ninja 400. With its lightweight chassis and responsive engine, this motorcycle offers dynamic performance and agile handling for riders of all skill levels.",
+      "imageUrl": "images/kawasaki-ninja-400.jpg"
+    },
+    {
+      "name": "Kawasaki Vulcan S",
+      "description": "Cruise in style with the Kawasaki Vulcan S. With its ergonomic design and adjustable ergonomics, this cruiser motorcycle offers personalized comfort and laid-back riding experiences on highways and country roads.",
+      "imageUrl": "images/kawasaki-vulcan-s.jpg"
+    },
+    {
+      "name": "Kawasaki Ninja ZX-6R",
+      "description": "Experience supersport performance with the Kawasaki Ninja ZX-6R. With its aggressive styling and powerful engine, this motorcycle offers exhilarating rides and precise handling on both urban streets and winding roads.",
+      "imageUrl": "images/kawasaki-ninja-zx-6r.jpg"
+    },
+    {
+      "name": "Kawasaki Z H2",
+      "description": "Unleash hypernaked performance with the Kawasaki Z H2. With its supercharged engine and aggressive styling, this motorcycle offers adrenaline-pumping rides and unmatched acceleration on both city streets and open highways.",
+      "imageUrl": "images/kawasaki-z-h2.jpg"
+    }
+  ],
+  "suzuki": [
+    {
+      "name": "Suzuki GSX-R1000",
+      "description": "Experience track-proven performance with the Suzuki GSX-R1000. With its race-winning pedigree and advanced technology, this superbike offers blistering acceleration and precise handling, making it a formidable contender on the circuit.",
+      "imageUrl": "images/suzuki-gsx-r1000.jpg"
+    },
+    {
+      "name": "Suzuki Hayabusa",
+      "description": "Unleash the ultimate sport touring experience with the Suzuki Hayabusa. With its iconic design and powerful engine, this motorcycle offers unmatched performance and exhilarating rides on both highways and winding roads.",
+      "imageUrl": "images/suzuki-hayabusa.jpg"
+    },
+    {
+      "name": "Suzuki V-Strom 650",
+      "description": "Embark on epic adventures with the Suzuki V-Strom 650. With its versatile performance, comfortable ergonomics, and advanced features, this adventure touring motorcycle offers excitement and comfort on both paved roads and unpaved trails.",
+      "imageUrl": "images/suzuki-v-strom-650.jpg"
+    },
+    {
+      "name": "Suzuki SV650",
+      "description": "Experience the thrill of naked sport riding with the Suzuki SV650. With its agile handling and responsive engine, this motorcycle offers dynamic performance and precise handling for riders of all skill levels.",
+      "imageUrl": "images/suzuki-sv650.jpg"
+    },
+    {
+      "name": "Suzuki Boulevard M109R",
+      "description": "Dominate the open road with the Suzuki Boulevard M109R. With its muscular styling and powerful engine, this cruiser motorcycle offers aggressive performance and commanding presence on highways and country roads.",
+      "imageUrl": "images/suzuki-boulevard-m109r.jpg"
+    },
+    {
+      "name": "Suzuki DR-Z400SM",
+      "description": "Experience the thrill of supermoto riding with the Suzuki DR-Z400SM. With its lightweight chassis and responsive engine, this motorcycle offers agile handling and versatile performance for urban commuting and weekend adventures.",
+      "imageUrl": "images/suzuki-dr-z400sm.jpg"
+    },
+    {
+      "name": "Suzuki GSX-S750",
+      "description": "Ride with confidence on the Suzuki GSX-S750. With its muscular styling and powerful engine, this naked sport bike offers exhilarating rides and precise handling on both city streets and winding roads.",
+      "imageUrl": "images/suzuki-gsx-s750.jpg"
+    },
+    {
+      "name": "Suzuki GSX250R",
+      "description": "Experience sportbike thrills with the Suzuki GSX250R. With its sleek design and responsive engine, this motorcycle offers dynamic performance and agile handling for riders of all skill levels.",
+      "imageUrl": "images/suzuki-gsx250r.jpg"
+    },
+    {
+      "name": "Suzuki RM-Z250",
+      "description": "Dominate the dirt with the Suzuki RM-Z250. With its race-ready performance and agile handling, this motocross bike offers championship-winning capability for riders who demand the best on the track.",
+      "imageUrl": "images/suzuki-rm-z250.jpg"
+    },
+    {
+      "name": "Suzuki Burgman 400",
+      "description": "Experience comfort and convenience with the Suzuki Burgman 400. With its spacious storage and comfortable ergonomics, this scooter offers relaxed rides and practical features for urban commuting and long-distance touring.",
+      "imageUrl": "images/suzuki-burgman-400.jpg"
+    }
+  ]
+}
